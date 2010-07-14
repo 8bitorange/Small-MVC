@@ -1,0 +1,305 @@
+/*************************************************
+ * Main Style Sheet
+ ************************************************/
+ 
+ /*** RESET ***/
+/* v1.0 | 20080212 via emeyer */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+	font-size: 75%;
+	width: 100%;
+	height: 100%;
+    position: absolute;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************************************************
+ * Typography
+ ************************************************/
+ 
+ /*** Content ***/
+ body {
+    font-family: Helvetica, Arial, sans-serif;
+ }
+ 
+ h1#logo {
+    font-size: 7.2em;
+    font-weight: bold;
+    color: #454545;
+    text-transform: uppercase;
+    text-shadow: #aaa 1px 1px 2px;
+ }
+ 
+ h2 {
+    font-size: 2em;
+    color: #545454;
+    font-weight: bold;
+    margin: 20px 0;
+ }
+ 
+ h2:first-child {
+    margin-top: 0;
+ }
+ 
+ h3 {
+    font-size: 1.6em;
+    color: #545454;
+    font-weight: bold;
+    margin: 20px 0;
+ }
+ 
+ p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 10px 0;
+ }
+
+a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#twitter_feed li {
+    margin: 10px 0;
+    border-bottom: 1px dotted #ddd;
+    padding: 0 0 10px 0;
+}
+
+#twitter_feed li a {
+    color: #0b609e;
+    font-weight: normal;
+}
+
+table {
+    width: 100%;
+}
+
+table th {
+    font-size: 1.4em;
+    color: #454545;
+    padding: 10px 0;
+    border-bottom: 1px dotted #ddd;
+}
+
+table tr.odd {
+    background-color: rgba(255,255,255,0.5);
+}
+
+table tr.even {
+    background-color: rgba(150,150,150,0.5);
+}
+
+table td {
+    font-size: 1.2em;
+    color: #333;
+    padding: 5px 10px;
+}
+
+/*** Nav ***/
+ #nav ul li {
+    font-size: 2.4em;
+    color: #636363;
+    text-shadow: #aaa 1px 1px 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav ul li a:hover {
+    color: #939393;
+}
+ 
+ /*************************************************
+ * Layout
+ ************************************************/
+
+body {
+    background: #fff;
+    background: url('../images/background.jpg') no-repeat 0px 100px #fff;
+}
+
+/*** Header ***/
+#header {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100px;
+} 
+
+h1#logo {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+/*** Nav ***/
+#nav {
+    width: 160px;
+    padding-left: 20px;
+    position: relative;
+    float: left;
+}
+
+#nav ul {
+    list-style: none;
+}
+
+/*** Content ***/
+#content {
+    width: 800px;
+    position: relative;
+    float: left;
+}
+
+.column {
+    position: relative;
+    float: left;
+    margin-right: 40px;
+}
+
+.column.wide {
+    width: 460px;
+}
+
+.column.narrow {
+    width: 260px;
+}
+
+#flickr img {
+    margin: 10px;
+}
+
+/*** Footer ***/
+#footer {
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 40px 0 0 0;
+}
+
+#social {
+    margin-left: 180px;
+}
+
+#social a {
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: relative;
+    float: left;
+    margin: 10px;
+    background: url('../images/sprites.png') 0 0 no-repeat;
+}
+
+#social a span {
+    display: none;
+}
+
+#social a#facebook {
+    background-position: -96px -32px;
+}
+
+#social a#myspace {
+    background-position: -32px -32px;
+}
+
+#social a#twitter {
+    background-position: 0px -32px;
+}
+
+#social a#lastfm {
+    background-position: -64px -32px;
+}
+
+#social a#facebook:hover {
+    background-position: -96px 0px;
+}
+
+#social a#myspace:hover {
+    background-position: -32px 0px;
+}
+
+#social a#twitter:hover {
+    background-position: 0px 0px;
+}
+
+#social a#lastfm:hover {
+    background-position: -64px 0px;
+}
+
+
+
+ /*************************************************
+ * Bug Fixes
+ ************************************************/
+
+/* hr and clearfix via blueprint */
+hr {background:#ddd;color:#ddd;clear:both;float:none;width:100%;height:.1em;margin:0 0 1.45em;border:none;}
+hr.space {background:#fff;color:#fff;visibility:hidden;}
+.clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
+.clearfix, .container {display:block;}
+.clear {clear:both;}
